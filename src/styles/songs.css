@@ -1,0 +1,16 @@
+.allCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 5rem;
+  width: 100%;
+  height: 100%;
+}
+.card {
+  display: flex;
+  width: 23rem; 
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
