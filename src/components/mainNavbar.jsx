@@ -11,7 +11,7 @@ function MainNavbar() {
     <Navbar expand="lg" className="bg-body-tertiary">
       <Sidebar />
       <Container>
-        <Navbar.Brand href="#">Spotify</Navbar.Brand>
+        <Navbar.Brand href="/">Spotify</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -19,10 +19,9 @@ function MainNavbar() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
 
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
+            {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Another action
@@ -31,9 +30,8 @@ function MainNavbar() {
               <NavDropdown.Item href="#action5">
                 Something else here
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
 
-            <Nav.Link disabled>Link</Nav.Link>
           </Nav>
 
           <Form className="d-flex">
@@ -47,7 +45,7 @@ function MainNavbar() {
           </Form>
         </Navbar.Collapse>
       </Container>
-      <Button variant="">Login</Button>
+      <Nav.Link href="/login">Login</Nav.Link>
     </Navbar>
   );
 }
